@@ -7,7 +7,7 @@ int count;
   void draw()
   {
       count = 0;
-      background(200, 150);
+      background(100, 150,200);
       for(int y = 40; y<= 300; y = y + 60) {
         for(int x = 55; x<= 300; x = x + 60){
           Die bob = new Die(x, y, 55);
@@ -18,8 +18,7 @@ int count;
   }
   fill(0);
    textSize(20);
-   text("Sum: " + count, 165, 370);
-   
+   text("Dots: " + count, 165, 370);
   }
   void mousePressed(){
       redraw();
@@ -43,8 +42,8 @@ int count;
       void show()
       {
          fill(250,200,0);
-         square(myX,myY,size);
-         fill(180);
+         rect(myX,myY,size,size);
+         fill(100, 150,200);
          if (dRandom == 1)
       for (int i = 1; i <= dRandom; i++) {
         ellipse(myX + (size/2), myY + (size/2), s, s);
