@@ -18,7 +18,7 @@ int count;
   }
   fill(0);
    textSize(20);
-   text("Dots: " + count, 165, 370);
+   text("Sum: " + count, 165, 370);
    
   }
   void mousePressed(){
